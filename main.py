@@ -1,8 +1,8 @@
 import numpy as np
 import torch
-from data.synthetic_dataset import create_synthetic_dataset, SyntheticDataset
-from models.seq2seq import EncoderRNN, DecoderRNN, Net_GRU
-from loss.dilate_loss import dilate_loss
+from dilate.data.synthetic_dataset import create_synthetic_dataset, SyntheticDataset
+from dilate.models.seq2seq import EncoderRNN, DecoderRNN, Net_GRU
+from dilate.loss.dilate_loss import dilate_loss
 from torch.utils.data import DataLoader
 import random
 from tslearn.metrics import dtw, dtw_path
